@@ -1,5 +1,7 @@
 # 第三方组件说明
 
+[English](THIRD_PARTY_NOTICES.en.md) · 简体中文
+
 本项目通过 Swift Package Manager 使用 GRDB.swift。该组件采用 MIT 许可证，完整许可证及其源代码请参见其官方仓库：
 
 https://github.com/groue/GRDB.swift

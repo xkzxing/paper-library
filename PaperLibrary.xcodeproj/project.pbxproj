@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00100000000000000000001 /* PaperLibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000001 /* PaperLibraryApp.swift */; };
+		A00100000000000000000002 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000002 /* Work.swift */; };
+		A00100000000000000000003 /* FileVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000003 /* FileVersion.swift */; };
+		A00100000000000000000004 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000004 /* Category.swift */; };
+		A00100000000000000000005 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000005 /* Tag.swift */; };
+		A00100000000000000000006 /* LibraryAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000006 /* LibraryAccess.swift */; };
+		A00100000000000000000007 /* LibraryFileActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000007 /* LibraryFileActor.swift */; };
+		A00100000000000000000008 /* PDFMetadataExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000008 /* PDFMetadataExtractor.swift */; };
+		A00100000000000000000009 /* ImportCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000009 /* ImportCoordinator.swift */; };
+		A0010000000000000000000A /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000A /* LibraryView.swift */; };
+		A0010000000000000000000B /* ImportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000B /* ImportTests.swift */; };
+		A0010000000000000000000C /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00100000000000000000010 /* PDFKit.framework */; };
+		A0010000000000000000000D /* SwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00100000000000000000011 /* SwiftData.framework */; };
+		A0010000000000000000000E /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00100000000000000000010 /* PDFKit.framework */; };
+		A0010000000000000000000F /* ArchiveRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000012 /* ArchiveRules.swift */; };
+		A00100000000000000000010 /* CrossrefClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000013 /* CrossrefClient.swift */; };
+		A00100000000000000000011 /* ManifestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000014 /* ManifestService.swift */; };
+		A00100000000000000000012 /* AIAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000015 /* AIAnalysis.swift */; };
+		A00100000000000000000013 /* GeminiPaperAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000016 /* GeminiPaperAnalyzer.swift */; };
+		A00100000000000000000014 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000017 /* SettingsView.swift */; };
+		A00100000000000000000015 /* SelectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000018 /* SelectionUITests.swift */; };
+		A00100000000000000000016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001A /* Assets.xcassets */; };
+		A00100000000000000000017 /* BibTeXExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001B /* BibTeXExporter.swift */; };
+		A00100000000000000000018 /* BibTeXRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001C /* BibTeXRemoteService.swift */; };
+		A00100000000000000000019 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001D /* AppIcon.icon */; };
+		A0010000000000000000001A /* ReadingProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001E /* ReadingProject.swift */; };
+		A0010000000000000000001B /* OpenAlexJournalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000001F /* OpenAlexJournalClient.swift */; };
+		A0010000000000000000001C /* BibTeXBatchExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000020 /* BibTeXBatchExporter.swift */; };
+		A0010000000000000000001D /* BatchBibTeXExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000021 /* BatchBibTeXExport.swift */; };
+		A0010000000000000000001E /* LibraryEnhancementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000022 /* LibraryEnhancementTests.swift */; };
+		A0010000000000000000001F /* LibraryHealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000023 /* LibraryHealthService.swift */; };
+		A00100000000000000000020 /* LibraryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000024 /* LibraryRow.swift */; };
+		A00100000000000000000021 /* AIAnalysisRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000025 /* AIAnalysisRules.swift */; };
+		A00100000000000000000022 /* StudyNoteRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000026 /* StudyNoteRules.swift */; };
+		A00100000000000000000023 /* StudyNoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000027 /* StudyNoteService.swift */; };
+		A00100000000000000000024 /* AIAnalysisCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000028 /* AIAnalysisCoordinator.swift */; };
+		A00100000000000000000025 /* LibraryFileModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000029 /* LibraryFileModels.swift */; };
+		A00100000000000000000026 /* LibrarySupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000030 /* LibrarySupport.swift */; };
+		A00100000000000000000027 /* LibraryInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000031 /* LibraryInspector.swift */; };
+		A00100000000000000000028 /* BibTeXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000032 /* BibTeXTests.swift */; };
+		A00100000000000000000029 /* BackupRecoveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000033 /* BackupRecoveryTests.swift */; };
+		A0010000000000000000002A /* StudyNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000034 /* StudyNoteTests.swift */; };
+		A0010000000000000000002B /* SearchSelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000035 /* SearchSelectionTests.swift */; };
+		A0010000000000000000002C /* ResearchCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000036 /* ResearchCardTests.swift */; };
+		A0010000000000000000002D /* MetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000037 /* MetadataTests.swift */; };
+		A0010000000000000000002E /* FileMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000038 /* FileMoveTests.swift */; };
+		A0010000000000000000002F /* LibraryFileNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000039 /* LibraryFileNotes.swift */; };
+		A00100000000000000000030 /* LibraryFileImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000003A /* LibraryFileImport.swift */; };
+		A00100000000000000000031 /* LibraryArticleRelocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000003B /* LibraryArticleRelocation.swift */; };
+		A00100000000000000000032 /* LibraryFileRelocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000003C /* LibraryFileRelocation.swift */; };
+		A00100000000000000000033 /* LibraryFileRecovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000003D /* LibraryFileRecovery.swift */; };
+		A00100000000000000000034 /* SearchTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000040 /* SearchTypes.swift */; };
+		A00100000000000000000035 /* PDFTextExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000041 /* PDFTextExtractor.swift */; };
+		A00100000000000000000036 /* SearchIndexStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000042 /* SearchIndexStore.swift */; };
+		A00100000000000000000037 /* LocalSearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000043 /* LocalSearchModels.swift */; };
+		A00100000000000000000038 /* SearchIndexCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000044 /* SearchIndexCoordinator.swift */; };
+		A00100000000000000000039 /* SearchEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000045 /* SearchEngineTests.swift */; };
+		A0010000000000000000003A /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = P00100000000000000000001 /* GRDB */; };
+		A00100000000000000000042 /* LibraryBatchRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000046 /* LibraryBatchRules.swift */; };
+		A00100000000000000000043 /* LibrarySheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000047 /* LibrarySheets.swift */; };
+		A00100000000000000000044 /* GeminiStudyNoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000048 /* GeminiStudyNoteClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B00100000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D00100000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E00100000000000000000001;
+			remoteInfo = PaperLibrary;
+		};
+		B00100000000000000000003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D00100000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E00100000000000000000001;
+			remoteInfo = PaperLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F00100000000000000000001 /* PaperLibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperLibraryApp.swift; sourceTree = "<group>"; };
+		F00100000000000000000002 /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		F00100000000000000000003 /* FileVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileVersion.swift; sourceTree = "<group>"; };
+		F00100000000000000000004 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F00100000000000000000005 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		F00100000000000000000006 /* LibraryAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAccess.swift; sourceTree = "<group>"; };
+		F00100000000000000000007 /* LibraryFileActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFileActor.swift; sourceTree = "<group>"; };
+		F00100000000000000000008 /* PDFMetadataExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFMetadataExtractor.swift; sourceTree = "<group>"; };
+		F00100000000000000000009 /* ImportCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportCoordinator.swift; sourceTree = "<group>"; };
+		F0010000000000000000000A /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		F0010000000000000000000B /* ImportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportTests.swift; sourceTree = "<group>"; };
+		F0010000000000000000000C /* PaperLibrary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PaperLibrary.entitlements; sourceTree = "<group>"; };
+		F0010000000000000000000D /* PaperLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0010000000000000000000E /* PaperLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0010000000000000000000F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F00100000000000000000010 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
+		F00100000000000000000011 /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = System/Library/Frameworks/SwiftData.framework; sourceTree = SDKROOT; };
+		F00100000000000000000012 /* ArchiveRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveRules.swift; sourceTree = "<group>"; };
+		F00100000000000000000013 /* CrossrefClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossrefClient.swift; sourceTree = "<group>"; };
+		F00100000000000000000014 /* ManifestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestService.swift; sourceTree = "<group>"; };
+		F00100000000000000000015 /* AIAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAnalysis.swift; sourceTree = "<group>"; };
+		F00100000000000000000016 /* GeminiPaperAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiPaperAnalyzer.swift; sourceTree = "<group>"; };
+		F00100000000000000000017 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F00100000000000000000018 /* SelectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionUITests.swift; sourceTree = "<group>"; };
+		F00100000000000000000019 /* PaperLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0010000000000000000001A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0010000000000000000001B /* BibTeXExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibTeXExporter.swift; sourceTree = "<group>"; };
+		F0010000000000000000001C /* BibTeXRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibTeXRemoteService.swift; sourceTree = "<group>"; };
+		F0010000000000000000001D /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		F0010000000000000000001E /* ReadingProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingProject.swift; sourceTree = "<group>"; };
+		F0010000000000000000001F /* OpenAlexJournalClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAlexJournalClient.swift; sourceTree = "<group>"; };
+		F00100000000000000000020 /* BibTeXBatchExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibTeXBatchExporter.swift; sourceTree = "<group>"; };
+		F00100000000000000000021 /* BatchBibTeXExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchBibTeXExport.swift; sourceTree = "<group>"; };
+		F00100000000000000000022 /* LibraryEnhancementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryEnhancementTests.swift; sourceTree = "<group>"; };
+		F00100000000000000000023 /* LibraryHealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryHealthService.swift; sourceTree = "<group>"; };
+		F00100000000000000000024 /* LibraryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRow.swift; sourceTree = "<group>"; };
+		F00100000000000000000025 /* AIAnalysisRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAnalysisRules.swift; sourceTree = "<group>"; };
+		F00100000000000000000026 /* StudyNoteRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyNoteRules.swift; sourceTree = "<group>"; };
+		F00100000000000000000027 /* StudyNoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyNoteService.swift; sourceTree = "<group>"; };
+		F00100000000000000000028 /* AIAnalysisCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAnalysisCoordinator.swift; sourceTree = "<group>"; };
+		F00100000000000000000029 /* LibraryFileModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFileModels.swift; sourceTree = "<group>"; };
+		F00100000000000000000030 /* LibrarySupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySupport.swift; sourceTree = "<group>"; };
+		F00100000000000000000031 /* LibraryInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryInspector.swift; sourceTree = "<group>"; };
+		F00100000000000000000032 /* BibTeXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibTeXTests.swift; sourceTree = "<group>"; };
+		F00100000000000000000033 /* BackupRecoveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupRecoveryTests.swift; sourceTree = "<group>"; };
+		F00100000000000000000034 /* StudyNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyNoteTests.swift; sourceTree = "<group>"; };
+		F00100000000000000000035 /* SearchSelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSelectionTests.swift; sourceTree = "<group>"; };
+		F00100000000000000000036 /* ResearchCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchCardTests.swift; sourceTree = "<group>"; };
+		F00100000000000000000037 /* MetadataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataTests.swift; sourceTree = "<group>"; };
+		F00100000000000000000038 /* FileMoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMoveTests.swift; sourceTree = "<group>"; };
+		F00100000000000000000039 /* LibraryFileNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFileNotes.swift; sourceTree = "<group>"; };
+		F0010000000000000000003A /* LibraryFileImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFileImport.swift; sourceTree = "<group>"; };
+		F0010000000000000000003B /* LibraryArticleRelocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryArticleRelocation.swift; sourceTree = "<group>"; };
+		F0010000000000000000003C /* LibraryFileRelocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFileRelocation.swift; sourceTree = "<group>"; };
+		F0010000000000000000003D /* LibraryFileRecovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFileRecovery.swift; sourceTree = "<group>"; };
+		F00100000000000000000040 /* SearchTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTypes.swift; sourceTree = "<group>"; };
+		F00100000000000000000041 /* PDFTextExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTextExtractor.swift; sourceTree = "<group>"; };
+		F00100000000000000000042 /* SearchIndexStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIndexStore.swift; sourceTree = "<group>"; };
+		F00100000000000000000043 /* LocalSearchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchModels.swift; sourceTree = "<group>"; };
+		F00100000000000000000044 /* SearchIndexCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIndexCoordinator.swift; sourceTree = "<group>"; };
+		F00100000000000000000045 /* SearchEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngineTests.swift; sourceTree = "<group>"; };
+		F00100000000000000000046 /* LibraryBatchRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryBatchRules.swift; sourceTree = "<group>"; };
+		F00100000000000000000047 /* LibrarySheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySheets.swift; sourceTree = "<group>"; };
+		F00100000000000000000048 /* GeminiStudyNoteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiStudyNoteClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C00100000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0010000000000000000003A /* GRDB in Frameworks */,
+				A0010000000000000000000C /* PDFKit.framework in Frameworks */,
+				A0010000000000000000000D /* SwiftData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C00100000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0010000000000000000000E /* PDFKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C00100000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D00100000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				D00100000000000000000004 /* PaperLibrary */,
+				D0010000000000000000000E /* PaperLibraryTests */,
+				D00100000000000000000016 /* PaperLibraryUITests */,
+				D00100000000000000000003 /* Frameworks */,
+				D0010000000000000000000F /* Products */,
+				F0010000000000000000000F /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		D00100000000000000000003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000010 /* PDFKit.framework */,
+				F00100000000000000000011 /* SwiftData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000004 /* PaperLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F0010000000000000000001D /* AppIcon.icon */,
+				D00100000000000000000005 /* App */,
+				D00100000000000000000006 /* Domain */,
+				D00100000000000000000008 /* Services */,
+				D0010000000000000000000B /* Features */,
+				D00100000000000000000012 /* Persistence */,
+				F0010000000000000000001A /* Assets.xcassets */,
+				F0010000000000000000000C /* PaperLibrary.entitlements */,
+			);
+			path = PaperLibrary;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000005 /* App */ = {
+			isa = PBXGroup;
+			children = (F00100000000000000000001 /* PaperLibraryApp.swift */,);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000006 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D00100000000000000000007 /* Models */,
+				D00100000000000000000010 /* Rules */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000002 /* Work.swift */,
+				F00100000000000000000003 /* FileVersion.swift */,
+				F00100000000000000000004 /* Category.swift */,
+				F00100000000000000000005 /* Tag.swift */,
+				F0010000000000000000001E /* ReadingProject.swift */,
+				F00100000000000000000015 /* AIAnalysis.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000008 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D00100000000000000000009 /* FileStore */,
+				D0010000000000000000000A /* PDFExtraction */,
+				D00100000000000000000011 /* Metadata */,
+				D00100000000000000000014 /* AI */,
+				D00100000000000000000017 /* Search */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000009 /* FileStore */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000006 /* LibraryAccess.swift */,
+				F00100000000000000000007 /* LibraryFileActor.swift */,
+				F00100000000000000000023 /* LibraryHealthService.swift */,
+				F00100000000000000000029 /* LibraryFileModels.swift */,
+				F00100000000000000000039 /* LibraryFileNotes.swift */,
+				F0010000000000000000003A /* LibraryFileImport.swift */,
+				F0010000000000000000003B /* LibraryArticleRelocation.swift */,
+				F0010000000000000000003C /* LibraryFileRelocation.swift */,
+				F0010000000000000000003D /* LibraryFileRecovery.swift */,
+			);
+			path = FileStore;
+			sourceTree = "<group>";
+		};
+		D0010000000000000000000A /* PDFExtraction */ = {
+			isa = PBXGroup;
+			children = (F00100000000000000000008 /* PDFMetadataExtractor.swift */,);
+			path = PDFExtraction;
+			sourceTree = "<group>";
+		};
+		D0010000000000000000000B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D0010000000000000000000C /* Import */,
+				D0010000000000000000000D /* Library */,
+				D00100000000000000000015 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D0010000000000000000000C /* Import */ = {
+			isa = PBXGroup;
+			children = (F00100000000000000000009 /* ImportCoordinator.swift */,);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		D0010000000000000000000D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F0010000000000000000000A /* LibraryView.swift */,
+				F00100000000000000000021 /* BatchBibTeXExport.swift */,
+				F00100000000000000000024 /* LibraryRow.swift */,
+				F00100000000000000000030 /* LibrarySupport.swift */,
+				F00100000000000000000031 /* LibraryInspector.swift */,
+				F00100000000000000000046 /* LibraryBatchRules.swift */,
+				F00100000000000000000047 /* LibrarySheets.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		D0010000000000000000000E /* PaperLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000045 /* SearchEngineTests.swift */,
+				F0010000000000000000000B /* ImportTests.swift */,
+				F00100000000000000000038 /* FileMoveTests.swift */,
+				F00100000000000000000037 /* MetadataTests.swift */,
+				F00100000000000000000035 /* SearchSelectionTests.swift */,
+				F00100000000000000000032 /* BibTeXTests.swift */,
+				F00100000000000000000036 /* ResearchCardTests.swift */,
+				F00100000000000000000034 /* StudyNoteTests.swift */,
+				F00100000000000000000033 /* BackupRecoveryTests.swift */,
+				F00100000000000000000022 /* LibraryEnhancementTests.swift */,
+			);
+			path = PaperLibraryTests;
+			sourceTree = "<group>";
+		};
+		D0010000000000000000000F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0010000000000000000000D /* PaperLibrary.app */,
+				F0010000000000000000000E /* PaperLibraryTests.xctest */,
+				F00100000000000000000019 /* PaperLibraryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000010 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000012 /* ArchiveRules.swift */,
+				F0010000000000000000001B /* BibTeXExporter.swift */,
+				F00100000000000000000020 /* BibTeXBatchExporter.swift */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000011 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000013 /* CrossrefClient.swift */,
+				F0010000000000000000001C /* BibTeXRemoteService.swift */,
+				F0010000000000000000001F /* OpenAlexJournalClient.swift */,
+			);
+			path = Metadata;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000012 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (D00100000000000000000013 /* Backup */,);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000013 /* Backup */ = {
+			isa = PBXGroup;
+			children = (F00100000000000000000014 /* ManifestService.swift */,);
+			path = Backup;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000014 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000025 /* AIAnalysisRules.swift */,
+				F00100000000000000000026 /* StudyNoteRules.swift */,
+				F00100000000000000000027 /* StudyNoteService.swift */,
+				F00100000000000000000028 /* AIAnalysisCoordinator.swift */,
+				F00100000000000000000016 /* GeminiPaperAnalyzer.swift */,
+				F00100000000000000000048 /* GeminiStudyNoteClient.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000015 /* Settings */ = {
+			isa = PBXGroup;
+			children = (F00100000000000000000017 /* SettingsView.swift */,);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000016 /* PaperLibraryUITests */ = {
+			isa = PBXGroup;
+			children = (F00100000000000000000018 /* SelectionUITests.swift */,);
+			path = PaperLibraryUITests;
+			sourceTree = "<group>";
+		};
+		D00100000000000000000017 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000040 /* SearchTypes.swift */,
+				F00100000000000000000041 /* PDFTextExtractor.swift */,
+				F00100000000000000000042 /* SearchIndexStore.swift */,
+				F00100000000000000000043 /* LocalSearchModels.swift */,
+				F00100000000000000000044 /* SearchIndexCoordinator.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E00100000000000000000001 /* PaperLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00100000000000000000011 /* Build configuration list for PBXNativeTarget "PaperLibrary" */;
+			buildPhases = (
+				C00100000000000000000011 /* Sources */,
+				C00100000000000000000001 /* Frameworks */,
+				C00100000000000000000012 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = PaperLibrary;
+			packageProductDependencies = (
+				P00100000000000000000001 /* GRDB */,
+			);
+			productName = PaperLibrary;
+			productReference = F0010000000000000000000D /* PaperLibrary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E00100000000000000000002 /* PaperLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00100000000000000000012 /* Build configuration list for PBXNativeTarget "PaperLibraryTests" */;
+			buildPhases = (
+				C00100000000000000000013 /* Sources */,
+				C00100000000000000000002 /* Frameworks */,
+				C00100000000000000000014 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = (B00100000000000000000002 /* PBXTargetDependency */,);
+			name = PaperLibraryTests;
+			productName = PaperLibraryTests;
+			productReference = F0010000000000000000000E /* PaperLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E00100000000000000000003 /* PaperLibraryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00100000000000000000013 /* Build configuration list for PBXNativeTarget "PaperLibraryUITests" */;
+			buildPhases = (
+				C00100000000000000000015 /* Sources */,
+				C00100000000000000000003 /* Frameworks */,
+				C00100000000000000000016 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = (B00100000000000000000004 /* PBXTargetDependency */,);
+			name = PaperLibraryUITests;
+			productName = PaperLibraryUITests;
+			productReference = F00100000000000000000019 /* PaperLibraryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D00100000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					E00100000000000000000001 = {CreatedOnToolsVersion = 26.6;};
+					E00100000000000000000002 = {CreatedOnToolsVersion = 26.6; TestTargetID = E00100000000000000000001;};
+					E00100000000000000000003 = {CreatedOnToolsVersion = 26.6; TestTargetID = E00100000000000000000001;};
+				};
+			};
+			buildConfigurationList = E00100000000000000000010 /* Build configuration list for PBXProject "PaperLibrary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = zh-Hans;
+			hasScannedForEncodings = 0;
+			knownRegions = (Base, "zh-Hans", en,);
+			mainGroup = D00100000000000000000002;
+			packageReferences = (
+				R00100000000000000000001 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
+			productRefGroup = D0010000000000000000000F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E00100000000000000000001 /* PaperLibrary */,
+				E00100000000000000000002 /* PaperLibraryTests */,
+				E00100000000000000000003 /* PaperLibraryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C00100000000000000000012 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A00100000000000000000016 /* Assets.xcassets in Resources */, A00100000000000000000019 /* AppIcon.icon in Resources */,); runOnlyForDeploymentPostprocessing = 0;};
+		C00100000000000000000014 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
+		C00100000000000000000016 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C00100000000000000000011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00100000000000000000001 /* PaperLibraryApp.swift in Sources */,
+				A00100000000000000000002 /* Work.swift in Sources */,
+				A00100000000000000000003 /* FileVersion.swift in Sources */,
+				A00100000000000000000004 /* Category.swift in Sources */,
+				A00100000000000000000005 /* Tag.swift in Sources */,
+				A00100000000000000000006 /* LibraryAccess.swift in Sources */,
+				A00100000000000000000007 /* LibraryFileActor.swift in Sources */,
+				A00100000000000000000008 /* PDFMetadataExtractor.swift in Sources */,
+				A00100000000000000000009 /* ImportCoordinator.swift in Sources */,
+				A0010000000000000000000A /* LibraryView.swift in Sources */,
+				A0010000000000000000000F /* ArchiveRules.swift in Sources */,
+				A00100000000000000000010 /* CrossrefClient.swift in Sources */,
+				A00100000000000000000011 /* ManifestService.swift in Sources */,
+				A00100000000000000000012 /* AIAnalysis.swift in Sources */,
+				A00100000000000000000013 /* GeminiPaperAnalyzer.swift in Sources */,
+				A00100000000000000000044 /* GeminiStudyNoteClient.swift in Sources */,
+				A00100000000000000000014 /* SettingsView.swift in Sources */,
+				A00100000000000000000017 /* BibTeXExporter.swift in Sources */,
+				A00100000000000000000018 /* BibTeXRemoteService.swift in Sources */,
+				A0010000000000000000001A /* ReadingProject.swift in Sources */,
+				A0010000000000000000001B /* OpenAlexJournalClient.swift in Sources */,
+				A0010000000000000000001C /* BibTeXBatchExporter.swift in Sources */,
+				A0010000000000000000001D /* BatchBibTeXExport.swift in Sources */,
+				A0010000000000000000001F /* LibraryHealthService.swift in Sources */,
+				A00100000000000000000020 /* LibraryRow.swift in Sources */,
+				A00100000000000000000021 /* AIAnalysisRules.swift in Sources */,
+				A00100000000000000000022 /* StudyNoteRules.swift in Sources */,
+				A00100000000000000000023 /* StudyNoteService.swift in Sources */,
+				A00100000000000000000024 /* AIAnalysisCoordinator.swift in Sources */,
+				A00100000000000000000025 /* LibraryFileModels.swift in Sources */,
+				A00100000000000000000034 /* SearchTypes.swift in Sources */,
+				A00100000000000000000035 /* PDFTextExtractor.swift in Sources */,
+				A00100000000000000000036 /* SearchIndexStore.swift in Sources */,
+				A00100000000000000000037 /* LocalSearchModels.swift in Sources */,
+				A00100000000000000000038 /* SearchIndexCoordinator.swift in Sources */,
+				A00100000000000000000026 /* LibrarySupport.swift in Sources */,
+				A00100000000000000000027 /* LibraryInspector.swift in Sources */,
+				A00100000000000000000042 /* LibraryBatchRules.swift in Sources */,
+				A00100000000000000000043 /* LibrarySheets.swift in Sources */,
+				A0010000000000000000002F /* LibraryFileNotes.swift in Sources */,
+				A00100000000000000000030 /* LibraryFileImport.swift in Sources */,
+				A00100000000000000000031 /* LibraryArticleRelocation.swift in Sources */,
+				A00100000000000000000032 /* LibraryFileRelocation.swift in Sources */,
+				A00100000000000000000033 /* LibraryFileRecovery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C00100000000000000000013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00100000000000000000039 /* SearchEngineTests.swift in Sources */,
+				A0010000000000000000000B /* ImportTests.swift in Sources */,
+				A00100000000000000000028 /* BibTeXTests.swift in Sources */,
+				A00100000000000000000029 /* BackupRecoveryTests.swift in Sources */,
+				A0010000000000000000002A /* StudyNoteTests.swift in Sources */,
+				A0010000000000000000002B /* SearchSelectionTests.swift in Sources */,
+				A0010000000000000000002C /* ResearchCardTests.swift in Sources */,
+				A0010000000000000000002D /* MetadataTests.swift in Sources */,
+				A0010000000000000000002E /* FileMoveTests.swift in Sources */,
+				A0010000000000000000001E /* LibraryEnhancementTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C00100000000000000000015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (A00100000000000000000015 /* SelectionUITests.swift in Sources */,);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00100000000000000000002 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = E00100000000000000000001 /* PaperLibrary */; targetProxy = B00100000000000000000001 /* PBXContainerItemProxy */;};
+		B00100000000000000000004 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = E00100000000000000000001 /* PaperLibrary */; targetProxy = B00100000000000000000003 /* PBXContainerItemProxy */;};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E00100000000000000000020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E00100000000000000000021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+		};
+			name = Release;
+		};
+		E00100000000000000000022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PaperLibrary/PaperLibrary.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 45;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "文献库";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MARKETING_VERSION = 0.2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.paperlibrary.PaperLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E00100000000000000000023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PaperLibrary/PaperLibrary.entitlements;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 45;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "文献库";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MARKETING_VERSION = 0.2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.paperlibrary.PaperLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E00100000000000000000024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.paperlibrary.PaperLibraryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaperLibrary.app/Contents/MacOS/PaperLibrary";
+			};
+			name = Debug;
+		};
+		E00100000000000000000025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.paperlibrary.PaperLibraryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaperLibrary.app/Contents/MacOS/PaperLibrary";
+			};
+			name = Release;
+		};
+		E00100000000000000000026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.paperlibrary.PaperLibraryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PaperLibrary;
+			};
+			name = Debug;
+		};
+		E00100000000000000000027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.paperlibrary.PaperLibraryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PaperLibrary;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E00100000000000000000010 /* Build configuration list for PBXProject "PaperLibrary" */ = {isa = XCConfigurationList; buildConfigurations = (E00100000000000000000020 /* Debug */, E00100000000000000000021 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+		E00100000000000000000011 /* Build configuration list for PBXNativeTarget "PaperLibrary" */ = {isa = XCConfigurationList; buildConfigurations = (E00100000000000000000022 /* Debug */, E00100000000000000000023 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+		E00100000000000000000012 /* Build configuration list for PBXNativeTarget "PaperLibraryTests" */ = {isa = XCConfigurationList; buildConfigurations = (E00100000000000000000024 /* Debug */, E00100000000000000000025 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+		E00100000000000000000013 /* Build configuration list for PBXNativeTarget "PaperLibraryUITests" */ = {isa = XCConfigurationList; buildConfigurations = (E00100000000000000000026 /* Debug */, E00100000000000000000027 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		R00100000000000000000001 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		P00100000000000000000001 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = R00100000000000000000001 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D00100000000000000000001 /* Project object */;
+}

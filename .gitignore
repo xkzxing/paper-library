@@ -1,0 +1,42 @@
+.DS_Store
+
+# Xcode 用户和本机构建数据
+DerivedData/
+build/
+发布/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.app/
+*.dSYM/
+*.xcarchive/
+*.ipa
+*.zip
+
+# 用户文献、资料库和本地数据库
+*.pdf
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.db-shm
+*.db-wal
+.paperlib/
+
+# 密钥、证书和本机配置
+.env
+.env.*
+*.p12
+*.p8
+*.pem
+*.key
+*.cer
+*.mobileprovision
+*.xcconfig.local
+
+# 图标设计过程中的可再生成资料
+IconDesign/
+PaperLibrary/Resources/IconConcepts/
+PaperLibrary/Resources/AppIconSource*
+PaperLibrary/Resources/AppIcon.iconset/
